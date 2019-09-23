@@ -10,7 +10,7 @@ function ChampT(){
     }else{
         CSSText.style.color = "white";
         Validation = true;
-        Alert.style.display = "none";
+        restorePopup();
     }   
     document.getElementById('charactere').innerHTML = nombre + " / 49"
 }
@@ -19,9 +19,18 @@ ChampT();
 
 function Suite(){
     if (Validation == true){
-        var 
+        var change = document.getElementById('ensemble');
+        change.style.transition = "0.8s ease";
+        change.style.marginLeft ="-100%";
     }else{
         var Alert = document.getElementById('Alert');
-        Alert.style.display = "block";
+        Alert.style.transition = "0.8s ease";
+        Alert.style.opacity = "1";
     }   
 }
+
+function restorePopup(){
+    var popup = document.getElementById('Alert');
+    popup.style.opacity = "0";
+}
+restorePopup();
