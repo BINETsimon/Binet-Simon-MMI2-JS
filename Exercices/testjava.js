@@ -47,16 +47,16 @@ function exoG () {
     document.getElementById('ex2_resultG').innerHTML = resultat;
 }
 
-window.onload = exoH;
+
 function exoH () {
     var nombreA = 82;
     var nombreB = 8;
     var resultat = nombreA % nombreB;
     document.getElementById('ex3_result').innerHTML = resultat;
 }
+exoH();
 
 //EXERCICE 4
-window.onload = resetExo4;
 var resultat4 = 0;
 function resetExo4(){
     resultat4 = 0;
@@ -82,13 +82,14 @@ function combinePlusTenMinusTwo(){
     plusTen();
     minusTwo();
 }
+resetExo4();
 
 //EXERCICE 5
-window.onload = exo5;
 function exo5 (){
     var resultat = Math.floor(Math.random() * (1000-50) + 50);
     document.getElementById('ex5_result').innerHTML = resultat;
 }
+exo5();
 
 //EXERCICE 6 
 function exo66(test){
@@ -101,7 +102,6 @@ function exo6 (){
 exo6();
 
 //EXERCICE 7
-window.onload = exo7;
 function exo77(test, ohoh){
     var resultat = test - ohoh;
     return resultat;
@@ -109,9 +109,9 @@ function exo77(test, ohoh){
 function exo7 (){
     document.getElementById('ex7_result').innerHTML = exo77(10,3);
 }
+exo7();
 
 //EXERCICE 8
-window.onload = exo8;
 function exo88(test, ohoh, yolo){
     var resultat = test / ohoh % yolo;
     return resultat;
@@ -119,6 +119,7 @@ function exo88(test, ohoh, yolo){
 function exo8 (){
     document.getElementById('ex8_result').innerHTML = exo88(12, 2, 6);
 }
+exo8();
 
 //EXERCICE 9
 function convertToPound(){
